@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <marquee><title>Cafe Coffee</title></marquee>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgba(187, 95, 9, 0.907);
+        }
+        header {    
+            background-image: url(desktop-wallpaper-coffee-beans-smoke-dark-coffee-lifestyle.jpg);
+            background-size: 1100px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color:rgba(248, 211, 130, 0.867);
+            margin: 20px 0;
+        }
+        .menu-item {
+            text-align: center;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .menu-item h3 {
+            margin-top: 10px;
+        }
+        .contact {
+            background-image: url(desktop-wallpaper-coffee-beans-smoke-dark-coffee-lifestyle.jpg);
+            background-size: 1100px;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, .contact textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+        }
+        .contact button {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <marquee>
+        <h1>Cafe Coffee</h1>
+    </marquee>
+        <p>Your favorite coffee destination</p>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="menu-item">
+            <img src="assorted-iced-coffee-on-white-260nw-2480796893.webp" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>Rs/-300</p>
+        </div>
+        <div class="menu-item">
+            <img src="1f6efae3e483d47160c541e2f68bc52c.avif" alt="Latte">
+            <h3>starbucks </h3>
+            <p>Rs/-800</p>
+        </div>
+        <div class="menu-item">
+            <img src="cappuccino-coffee-hd-8k-wallpaper-stock-photographic-image_871881-10710.avif" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>Rs/-550</p>
+        </div>
+        <div class="menu-item">
+            <img src="istockphoto-1276830740-612x612.jpg" alt="brown coffe">
+            <h3>Brown Coffe</h3>
+            <p>Rs/-600</p>
+        </div>
+        
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
